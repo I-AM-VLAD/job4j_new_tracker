@@ -6,6 +6,10 @@ public class Broken {
     private String name;
     public static final String NEW_VALUE = "";
 
+    Broken() {
+
+    }
+
     public void echo() {
 
     }
