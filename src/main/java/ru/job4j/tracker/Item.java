@@ -10,12 +10,6 @@ public class Item {
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
     private String currentDateTimeFormat = created.format(formatter);
 
-    public Item(int id, String name, LocalDateTime created) {
-        this.id = id;
-        this.name = name;
-        this.created = created;
-    }
-
     public String getCurrentDateTimeFormat() {
         return currentDateTimeFormat;
     }
