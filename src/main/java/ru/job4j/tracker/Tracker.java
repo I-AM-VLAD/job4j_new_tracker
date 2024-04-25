@@ -37,7 +37,6 @@ public class Tracker {
 
     public boolean replace(int id, Item item) {
         int index = indexOf(id);
-        boolean result = true;
         if (index == -1) {
             return false;
         }
