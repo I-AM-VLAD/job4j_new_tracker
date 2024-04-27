@@ -1,13 +1,19 @@
 package ru.job4j.tracker;
 
 import java.util.Scanner;
+import ru.job4j.tracker.output.*;
 
 public class ConsoleInput implements Input {
     private Scanner scanner = new Scanner(System.in);
+    private final Output output;
+
+    public ConsoleInput(Output output) {
+        this.output = output;
+    }
 
     @Override
     public String askStr(String question) {
-        System.out.print(question);
+        output.println(question);
         return scanner.nextLine();
     }
 
