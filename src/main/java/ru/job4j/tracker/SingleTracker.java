@@ -4,7 +4,7 @@ import ru.job4j.tracker.model.Item;
 
 public class SingleTracker {
 
-    private static Tracker tracker = new Tracker();
+    private Tracker tracker = new Tracker();
     private static SingleTracker singleTracker = null;
 
     private SingleTracker() {
