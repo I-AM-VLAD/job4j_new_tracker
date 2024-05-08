@@ -10,6 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 class ItemAscByNameTest {
     @Test
     void whenItemAscByName() {
+
         List<Item> items = Arrays.asList(
                 new Item("Саша"),
                 new Item("Таня"),
