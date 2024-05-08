@@ -16,9 +16,9 @@ class ItemAscByNameTest {
                 new Item("Влад")
         );
         List<Item> expected = Arrays.asList(
-                items.get(2),
-                items.get(0),
-                items.get(1)
+                new Item("Влад"),
+                new Item("Саша"),
+                new Item("Таня")
         );
         items.sort(new ItemAscByName());
         assertThat(items).isEqualTo(expected);
@@ -32,9 +32,9 @@ class ItemAscByNameTest {
                 new Item("Влад")
         );
         List<Item> expected = Arrays.asList(
-                items.get(1),
-                items.get(0),
-                items.get(2)
+                new Item("Таня"),
+                new Item("Саша"),
+                new Item("Влад")
         );
         items.sort(new ItemDescByName());
         assertThat(items).isEqualTo(expected);
